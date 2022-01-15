@@ -113,6 +113,8 @@ letter-spacing: 0.02em;
   letter-spacing: 0.03em;
 }
 
+.ourteam{background-color: #F5F4FA;}
+
 .section-title {
   color: var(--main-text-color);
   font-weight: bold;
