@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: Roboto,sans-serif;
 }
 
 a {
@@ -23,7 +23,8 @@ ul {
 }
 
 .name-logo {
-  font-weight: bold;
+  font-family: Raleway;
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -34,7 +35,7 @@ ul {
   color: var(--main-text-color);
 }
 
-.nav-list a {
+.nav-list-link {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -42,17 +43,21 @@ ul {
   letter-spacing: 0.02em;
   cursor: pointer;
 }
-.nav-list a:hover,
-.nav-list a:focus {
+.nav-list-link:hover,
+.nav-list-link:focus {
   color: var(--button-color);
 }
 
-.contacts-list a {
-  color: var(--additional-text-color);
-  text-decoration: none;
+.contacts-link {
+color: var(--additional-text-color);
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.02em;
 }
-.contacts-list a:hover,
-.contacts-list a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--button-color);
 }
 
@@ -74,14 +79,16 @@ ul {
 .button-hero {
   color: var(--title-color);
   background-color: var(--button-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
+.button-hero:hover{background-color: #188CE8;}
 
 /*advantages*/
 
@@ -92,7 +99,7 @@ ul {
 
 .advantage-title {
   color: var(--main-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -101,7 +108,6 @@ ul {
 
 .advantage-description {
   color: var(--additional-text-color);
-  font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -170,13 +176,12 @@ ul {
   background-color: var(--background-color);
 }
 
-.projects-portfolio,
-.portfolio-list {
+.projects-portfolio{
   color: transparent;
   font-size: 0;
 }
 
-.button-projects button {
+.button-link{
   background-color: var(--button-portfolio);
   color: var(--portfolio-text-color);
   font-weight: 500;
@@ -186,8 +191,8 @@ ul {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-.button-projects button:hover,
-.button-projects button:focus {
+.button-link:hover,
+.button-link:focus {
   background-color: var(--button-color);
   color: var(--title-color);
 }
